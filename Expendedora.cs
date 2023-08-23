@@ -9,6 +9,26 @@ namespace ExpendedoraG2_2024_1
         private string marca;
         private ushort cantproductos;
         private float precio;
+        private byte temperatura;
+
+        #endregion
+
+        #region Propiedades
+        public byte Temperatura 
+        { 
+            get => temperatura;
+            set
+            {
+                if (0 < value && value < 25)
+                {
+                    temperatura = value;
+                }
+                else
+                {
+                    temperatura = 20;
+                }
+            }
+        }
 
         #endregion
 
@@ -68,8 +88,16 @@ namespace ExpendedoraG2_2024_1
 
         public Expendedora(bool Mantenimineto)
         {
+            Temperatura = 20;
             if (Mantenimineto == true)
                 Console.WriteLine("Entrando en modo mantenimineto");
+                Console.WriteLine("Cambiando la temperatura");
+            LimpiarDisplay();
+            for (int i = 0; i < 20; i++)
+            {
+                Temperatura++;
+            }
+            Console.WriteLine("Mostrando Temperatura: {0} [°C]", Temperatura);
             
         }
 
