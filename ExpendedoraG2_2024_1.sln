@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpendedoraG2_2024_1", "ExpendedoraG2_2024_1.csproj", "{B049EDF2-35B8-4193-B264-39E8FC132DBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B049EDF2-35B8-4193-B264-39E8FC132DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B049EDF2-35B8-4193-B264-39E8FC132DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B049EDF2-35B8-4193-B264-39E8FC132DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B049EDF2-35B8-4193-B264-39E8FC132DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEFDFEE0-9097-44E0-90AD-C2D9E639A027}
+	EndGlobalSection
+EndGlobal
