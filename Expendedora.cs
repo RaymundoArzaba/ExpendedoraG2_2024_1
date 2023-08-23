@@ -66,6 +66,13 @@ namespace ExpendedoraG2_2024_1
             MostrarPrecio(codigo);
         }
 
+        public Expendedora(bool Mantenimineto)
+        {
+            if (Mantenimineto == true)
+                Console.WriteLine("Entrando en modo mantenimineto");
+            
+        }
+
         #endregion
 
     }
