@@ -9,12 +9,12 @@ namespace ExpendedoraG2_2024_1
         private string marca;
         private ushort cantproductos;
         private float precio;
-        private byte temperatura;
+        internal byte temperatura;
 
         #endregion
 
         #region Propiedades
-        public byte Temperatura 
+        public virtual byte Temperatura 
         { 
             get => temperatura;
             set
@@ -35,6 +35,17 @@ namespace ExpendedoraG2_2024_1
             get => marca; 
             set => marca = value; 
         }
+        internal float Precio 
+        { 
+            get => precio;
+            set
+            {
+                if (value < 0)
+                    precio = 10;
+                else
+                    precio = value;
+            }
+        }
 
         #endregion
 
@@ -50,7 +61,7 @@ namespace ExpendedoraG2_2024_1
             Thread.Sleep(2000);
             Console.Clear();
         }
-        private string MostrarProducto()
+        public virtual string MostrarProducto()
         {
             string codigo = "";
             Console.WriteLine("3A: Doritos \n3B: Churrumais");
@@ -59,7 +70,7 @@ namespace ExpendedoraG2_2024_1
             return codigo;
         }
 
-        private void MostrarPrecio(string codigo)
+        public virtual void MostrarPrecio(string codigo)
         {
             switch (codigo)
             {
@@ -85,11 +96,6 @@ namespace ExpendedoraG2_2024_1
             precio = 18.0F;
             Saludo();
             LimpiarDisplay();
-            Console.WriteLine("Marca: {0}", Marca);
-            LimpiarDisplay();
-            string codigo = MostrarProducto();
-            LimpiarDisplay();
-            MostrarPrecio(codigo);
         }
 
         public Expendedora(bool Mantenimineto)
